@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #ADD8E6;
+}
+
+.container-head{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.container-head > div{
+    padding: 5px;
+    border: 1px dashed black;
+    background-color: #DAA520;
+    min-width: 25%  ;
+}
+
+.nav-bar{
+    flex-grow: 1;
+    text-align: center;
+}
+
+.container-head :last-child{
+    text-align: end;
+}
+
+.first-container{
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.back-blue{
+    background-color: #00008B;
+}
+
+.first-container > div{
+    width: 100%;
+    height: 400px;
+    border: 1px dashed black;
+    background-color: #EE82EE;
+}
+
+.container{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.container > div{
+    min-width: 40%;
+    height: 500px;
+    border: 1px dashed black;
+}
+
+.container :first-child{
+    flex-grow: 1;
+    background-color: #1E90FF;
+}
+
+.container :last-child{
+    background-color: #FFC0CB;
+}
+
+.container.rev{
+    flex-direction: row-reverse;
+}
+
+.back-grey{
+    background-color: #D3D3D3;
+}
+
+.last-container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.last-container > div{
+    width: 100%;
+    height: 600px;
+    border: 1px dashed black;
+    background-color: #228B22;
+}
+
+.back-black{
+    padding: 5px 0 20px;
+    background-color: #23272A;
+}
+
+.container-foot{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    border: 1px dashed black;
+}
+
+.container-foot > div{
+    flex-grow: 1;
+    height: 500px;
+    border: 1px dashed white;
+    background-color: #20B2AA;
+}
+
+.container-foot :first-child{
+    min-width: calc(100% / 3);
+    background-color: #F08080;
+    border: 1px dashed black;  
+}
+
+nav{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    justify-content: space-between;
+    background-color: #7FFFD4;
+}
+
+nav > div{
+    padding: 5px;
+    background-color: #FFB6C1;
+    border: 1px dashed black;
+}
+
+footer > section{
+    background-color: #23272A;
+    padding: 20px 0 0;
+}
