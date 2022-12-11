@@ -5,12 +5,6 @@
 
 /*Generics*/
 
-ul{
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
-}
-
 li{
     list-style: none;
 }
@@ -20,7 +14,38 @@ a{
     color: white;
 }
 
+h2, p{
+    margin: 30px 0;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+h4, .foot-blue{
+    color: #8EA1E1;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+.wave{
+    margin-bottom: -5px;
+}
+
 /*Header*/
+
+
+.link-list{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
 
 header{
     background-color: #3161E0;
@@ -109,14 +134,19 @@ header{
 }
 
 .container > div{
-    min-width: 40%;
     height: 500px;
-    border: 1px dashed black;
+    margin: 50px;
 }
 
 .container :first-child{
     flex-grow: 1;
 }
+
+.side{
+    max-width: 25%;
+}
+
+/*Container-rev*/
 
 .container.rev{
     flex-direction: row-reverse;
@@ -126,18 +156,41 @@ header{
     background-color: #D3D3D3;
 }
 
+.wave.roteate{
+    transform: rotate(180deg);
+}
+
+/*Last-container*/
+
 .last-container{
     width: 80%;
     margin: 0 auto;
     padding: 20px 0;
+    text-align: center;
 }
 
 .last-container > div{
     width: 100%;
-    height: 600px;
-    border: 1px dashed black;
-    background-color: #228B22;
+    min-height: 600px;
 }
+
+.last{
+    width: 50%;
+    margin: 50px auto;
+}
+
+.back-star{
+    background-image: url(../img/stars.svg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.color.blue{
+    background-color: #8EA1E1;
+    color: white;
+}
+
+/*Footer*/
 
 .back-black{
     padding: 5px 0 20px;
@@ -148,20 +201,25 @@ header{
     display: flex;
     width: 80%;
     margin: 0 auto;
-    border: 1px dashed black;
+    color: white;
 }
 
 .container-foot > div{
     flex-grow: 1;
     height: 500px;
-    border: 1px dashed white;
-    background-color: #20B2AA;
+    margin: 30px 20px;
 }
 
-.container-foot :first-child{
-    min-width: calc(100% / 3);
-    background-color: #F08080;
-    border: 1px dashed black;  
+.container-foot > div > ul > li{
+    margin: 5px;
+}
+
+.ita{
+    height: 1rem;
+}
+
+nav{
+    border-top: 1px solid #8EA1E1;
 }
 
 section > nav{
@@ -170,16 +228,12 @@ section > nav{
     margin: auto;
     padding: 20px 0;
     justify-content: space-between;
-    background-color: #7FFFD4;
 }
 
-nav > div{
-    padding: 5px;
-    background-color: #FFB6C1;
-    border: 1px dashed black;
+.color.blue.footer{
+    font-size: 0.8rem;
 }
 
-footer > section{
-    background-color: #23272A;
-    padding: 20px 0 0;
+.logo-footer{
+    margin: 10px;
 }
